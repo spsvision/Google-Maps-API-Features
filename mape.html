@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 80%;
+}
+
+#color-palette {
+  clear: both;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+.color-button {
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  margin: 36px;
+  float: left;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeE1ZVOvAN10fnPhetd3oFvm0Ek0iG8f4&libraries=places,geometry,drawing,visualization"></script>
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id="map"></div>
+<div id="color-palette"></div>
+<script src="mape.js"></script>
+</html>
