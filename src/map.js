@@ -41,16 +41,6 @@ function deleteAllShape() {
   area = 0;
   perimeter = 0;
 }
-function check(i) {
-  if (layer[i].getMap() == null) {
-    layer[i].setMap(map);
-  } else {
-    layer[i].setMap(null);
-  }
-}
-function chi(id, typer) {
-  document.getElementById('actions').value += "\n\n#" + id + ":\n";
-}
 function selectColor(color) {
   selectedColor = color;
   for (var i = 0; i < colors.length; ++i) {
