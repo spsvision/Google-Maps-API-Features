@@ -4,7 +4,9 @@ Explore the geospatial features of the Google Maps API
 ## Draw Distinct Shapes
 In the Google Maps API, you can draw rectangles, circles, polygons, and multi-lines. Markers can also be dropped at areas of interest.
 
-When a shape is completed, click on the shape to see the full list of corner coordinates as well as geospatial details like area, perimeter, and/or radius.
+When a shape is completed, click on the shape to see the full list of corner coordinates as well as geospatial details like area, perimeter, and/or radius. Even if you made a mistake, you can still move and edit the shape to apply corrections. 
+
+** Circles cannot be corrected. To fix circles, you have to delete the shape entirely.
 
 ## Save all your Shapes
 Once you've completed all your shapes, click the 'save' control button to save your entire map to your browser's local storage saved under the tag 'geoData'. All map data is saved as a GeoJSON. The GeoJSON carefully encodes every corner coordinate and each shape's area, perimeter, or radius to the 14th decimal place. The GeoJSON also saves the shape's distinct colour as well as each shape's unique ID (strictly numerical presently). Learn more about local storage here (https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) and learn more of the geoJSON file type here (http://geojson.org/). 
@@ -14,7 +16,7 @@ When your page is reloaded, all your shapes will be loaded through the GeoJSON a
 ## Download your map
 At any point in time, you can download the entire contents of your saved data by clicking the 'download' button. This will generate the map's GeoJSON under the name 'myGeojson.json'. This file type can easily be converted to other geographical file types like KML, Shapefile, WKT, etc. To test the authenticity of your downloaded copy, head over to geojson.io.
 
-** Circles may not be accurately recreated as a circle is not a recognized GeoJSON structure.
+**Circles may not be accurately recreated as a circle is not a recognized GeoJSON structure.
 
 ## Delete all your Shapes
 At any point in time, upon clicking 'Clear Map', all present shapes will be deleted. This is done by exclusively removing each shape from the GeoJSON structure and the visual map itself.
