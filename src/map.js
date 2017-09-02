@@ -164,6 +164,8 @@ function initialize() {
     center: new google.maps.LatLng(31.553574922464268, -18.160400390625),
     zoom: 2, mapTypeId: google.maps.MapTypeId.HYBRID, zoomControl: true, mapTypeControl: true, mapTypeControlOptions : { position: google.maps.ControlPosition.TOP_LEFT}, scaleControl: true, streetViewControl: false, rotateControl: true, fullscreenControl: true, fullscreenControlOptions : { position:google.maps.ControlPosition.RIGHT_TOP }
   });
+
+  map.setTilt(45);
   var polyOptions = {
     strokeWeight: 3,
     fillOpacity: 0.75,
