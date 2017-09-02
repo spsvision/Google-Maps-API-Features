@@ -16,6 +16,8 @@ When your page is reloaded, all your shapes will be loaded through the GeoJSON a
 ## Download your map
 At any point in time, you can download the entire contents of your saved data by clicking the 'download' button. This will generate the map's GeoJSON under the name 'myGeojson.json'. This file type can easily be converted to other geographical file types like KML, Shapefile, WKT, etc. To test the authenticity of your downloaded copy, head over to geojson.io.
 
+<a href="res/myGeojson.json" download>Download</a>
+
 **Circles may not be accurately recreated as a circle is not a recognized GeoJSON structure.
 
 ## Delete all your Shapes
